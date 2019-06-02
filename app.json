@@ -1,31 +1,31 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/change/change",
-    "pages/history/history",
-    "pages/logs/logs"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "black",
-    "navigationBarTitleText": "Andluo翻译",
-    "navigationBarTextStyle": "black"
-},
-"tabBar": {
-    
-    "position": "top",
-    "color": "#2a3a4a",
-    "selectedColor": "#1a2a3a",
-    "list": [
-        {
-            "pagePath": "pages/index/index",
-            "text": "翻译"
-        },
-        {
-            "pagePath": "pages/history/history",
-            "text": "历史"
-        }
-    ]
-},
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/index/index",
+        "pages/change/change",
+        "pages/history/history",
+        "pages/logs/logs"
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "black",
+        "navigationBarTitleText": "Andluo翻译",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "position": "top",
+        "color": "#2a3a4a",
+        "selectedColor": "#1a2a3a",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "翻译"
+            },
+            {
+                "pagePath": "pages/history/history",
+                "text": "历史"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
 }
