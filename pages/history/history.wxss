@@ -27,3 +27,18 @@
   margin-left:10px;
 
 }
+
+.clearAll {
+    text-align:center;
+    color:#4a5a6a;
+    font-size:30rpx;
+    position:fixed;
+    bottom:10rpx;
+    left:50%;
+    transform:translate(-50%);
+    border:1px solid #dddddd;
+    padding:15rpx 30px;
+    border-radius:8rpx;
+    background:#fcf9ec;
+
+}

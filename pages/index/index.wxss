@@ -34,7 +34,7 @@
   right: 12rpx;
   top: 20rpx;
   z-index: 100;
-  font-size: 40rpx;
+  font-size: 50rpx;
   color: #888;
 }
 

@@ -13,7 +13,6 @@
 },
 "tabBar": {
     
-    "backgroundColor": "white",
     "position": "top",
     "color": "#2a3a4a",
     "selectedColor": "#1a2a3a",

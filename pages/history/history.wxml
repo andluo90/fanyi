@@ -8,5 +8,8 @@
     </view>
   </view>
 </scroll-view>
+<view class='clearAll' bindtap='onClearAll' hidden="{{isHide}}">
+    清空历史记录
+</view>
 
 

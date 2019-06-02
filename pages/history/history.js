@@ -7,7 +7,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-        history: []
+        history: [],
+        isHide:false
     },
 
     /**
@@ -20,12 +21,23 @@ Page({
     onShow: function () {
         
         this.setData({ history: wx.getStorageSync('history') })
+        if (this.data.history.length === 0){
+            this.setData({isHide:true})
+        }else {
+            this.setData({ isHide: false })
+        }
     },
 
     onTapItem: function (e) {
         wx.reLaunch({
             url: `/pages/index/index?query=${e.currentTarget.dataset.query}&result=${e.currentTarget.dataset.result}`
         })
+    },
+
+    onClearAll:function(e){
+        this.setData({ history: [],isHide:true })
+        wx.setStorageSync('history', history)
+
     },
 
     /**
