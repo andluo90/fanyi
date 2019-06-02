@@ -4,13 +4,14 @@
 
 .container {
   padding: 0;
-  background-color:#f5fafe;
+  background-color:#fdfbf6;
+  
   height: 100vh;
   display: flex;
   flex-direction:column;
   box-sizing: border-box;
   font-size: 30rpx;
-  color: #333;
+  color: #454d66;
 } 
 
 .copyright {
@@ -20,7 +21,7 @@
   align-items:flex-end;
   padding-bottom: 20rpx;
   font-size: 28rpx;
-  color:#999;
+  color:#2a3a4a;
 }
 
 .view-hover {

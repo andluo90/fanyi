@@ -7,16 +7,16 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#1c1b21",
-    "navigationBarTitleText": "饥人谷翻译",
-    "navigationBarTextStyle": "black",
-    "backgroundColor": "red"
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "Andluo翻译",
+    "navigationBarTextStyle": "black"
 },
 "tabBar": {
-    "borderStyle": "white",
+    
+    "backgroundColor": "white",
     "position": "top",
-    "color": "#595959",
-    "selectedColor": "#1c1b21",
+    "color": "#2a3a4a",
+    "selectedColor": "#1a2a3a",
     "list": [
         {
             "pagePath": "pages/index/index",

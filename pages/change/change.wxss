@@ -1,5 +1,5 @@
 .container {
-  background: #f8f8f8;
+  background: #fcf9ec;
 }
 .lang-list {
   display: flex;
@@ -7,16 +7,16 @@
 }
 
 .title {
-  background: #fff;
+  
   border-bottom: 1px solid #ececec;
   padding: 20rpx 40rpx;
-  color: #aaa;
+  color: #2a3a4a;
   font-size: 28rpx;
 }
 
 .item {
   padding-left: 40rpx;
-  background-color: #fff;
+  
 }
 
 .item-inner {

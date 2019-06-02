@@ -1,16 +1,17 @@
 /**index.wxss**/
 .change {
-  color: #8995a1;
+  color: #2a3a4a;
   font-size: 24rpx;
   padding: 20rpx 40rpx;
   display: flex;
   align-items: center;
+  background-color:#fcf9ec
 }
 .change .icon-right {
-  color: #888;
+  color: #2a3a4a;
 }
 .change .icon-down {
-  color: #8995a1;
+  color: #2a3a4a;
   font-size: 20rpx;
 }
 
@@ -18,11 +19,11 @@
   position: relative;
 }
 .textarea-wrap {
-  background: #fff;
+  background: #ffffff;
   border-bottom: 1px solid #c7cee0;
 }
 .input-area textarea {
-  background-color: #fff;
+  
   padding: 30rpx 0 30rpx 30rpx;
   width: calc(100% - 48rpx);
   margin: 0;
@@ -38,9 +39,9 @@
 }
 
 .input-area .text-area {
-  min-height: 80rpx;
+  min-height: 300rpx;
   padding: 40rpx;
-  background-color: #fff;
+  background-color: #fcf9ec;
 }
 
 .input-area .text-title {

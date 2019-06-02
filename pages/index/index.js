@@ -12,16 +12,17 @@ Page({
   },
     onLoad: function (options) {
         console.log('lonload..')
-        console.log(options)
+        
         if (options.query) {
-            this.setData({ query: options.query })
+            this.setData({ query: options.query, result:Array( {dst:options.result} )})
         }
+        console.log(this.data)
 
     },
     onShow: function () {
         if (this.data.curLang.lang !== app.globalData.curLang.lang) {
             this.setData({ curLang: app.globalData.curLang })
-            this.onConfirm()
+            
         }
 
     },
@@ -36,19 +37,33 @@ Page({
         console.log('focus')
     },
     onTapClose: function () {
-        this.setData({ query: '', hideClearIcon: true })
+        this.setData({ query: '', hideClearIcon: true,result:[] })
     },
     onConfirm: function () {
         if (!this.data.query) return
-        translate(this.data.query, { from: 'auto', to: this.data.curLang.lang }).then(res => {
-            this.setData({ 'result': res.trans_result })
-
-            let history = wx.getStorageSync('history') || []
-            history.unshift({ query: this.data.query, result: res.trans_result[0].dst })
-            history.length = history.length > 10 ? 10 : history.length
-            wx.setStorageSync('history', history)
-        }).catch((error)=>{
-            console.log(error)
+        translate(this.data.query, { from: 'auto', to: this.data.curLang.lang })
+            .then(res => {
+                
+                this.setData({ 'result': res.trans_result })
+                const cur_result = { query: this.data.query, result: res.trans_result[0].dst }
+                let tmp = wx.getStorageSync('history') || []
+    
+                const history = []
+                tmp.map((i)=>{
+                    if(i.query !== cur_result.query){
+                        console.log(i.query, cur_result.query)
+                        history.push(i)
+                    }
+                })
+                console.log('history')
+                console.log(history)
+                history.unshift(cur_result)
+                
+                
+                history.length = history.length > 25 ? 25 : history.length
+                wx.setStorageSync('history', history)
+            }).catch((error)=>{
+                console.log(error)
         })
     }
 
