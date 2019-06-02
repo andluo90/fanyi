@@ -15,11 +15,11 @@
 
 ### 应用截图
 
-![1](/shortcut/s1.jpeg)
-![2](/shortcut/s2.jpeg)
-![3](/shortcut/s3.jpeg)
-![4](/shortcut/s4.jpeg)
-![5](/shortcut/s5.jpeg)
+![1](./shortcut/ss1.png)
+![2](./shortcut/ss2.png)
+![3](./shortcut/ss3.png)
+![4](./shortcut/ss4.png)
+![5](./shortcut/ss5.png)
 
 
 #### 如有疑问，请与我联系:1455234749@qq.com
